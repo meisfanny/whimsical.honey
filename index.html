@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Whimsical Honey by Any</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            color: #5a3d6c;
+
+            background-image:
+                linear-gradient(
+                    rgba(255,230,242,0.85),
+                    rgba(243,232,255,0.85)
+                ),
+                url('images/MASKOT BY ANY 2.png');
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #7b4fa3;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero img {
+            width: 260px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 16px;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .card h3 {
+            margin: 15px 0 5px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background: #ffb7d5;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .card a:hover {
+            background: #e89ac1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 14px;
+        }
+
+        .social a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #7b4fa3;
+            font-weight: 600;
+        }
+
+        /* Bubble Animation */
+        .bubbles {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .bubble {
+            position: absolute;
+            bottom: -100px;
+            background: rgba(255, 183, 213, 0.35);
+            border-radius: 50%;
+            animation: floatUp linear infinite;
+        }
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+    }
+    to {
+        transform: translateY(-120vh) scale(1.3);
+        opacity: 0;
+    }
+}
+
+    </style>
+
+</head>
+
+<body>
+<div class="bubbles">
+    <div class="bubble" style="left:10%; width:40px; height:40px; animation-duration:18s;"></div>
+    <div class="bubble" style="left:25%; width:25px; height:25px; animation-duration:14s;"></div>
+    <div class="bubble" style="left:40%; width:50px; height:50px; animation-duration:22s;"></div>
+    <div class="bubble" style="left:55%; width:30px; height:30px; animation-duration:16s;"></div>
+    <div class="bubble" style="left:70%; width:45px; height:45px; animation-duration:20s;"></div>
+    <div class="bubble" style="left:85%; width:20px; height:20px; animation-duration:12s;"></div>
+</div>
+
+<header>
+    <h1>Whimsical Honey by Any 🍯</h1>
+    <p>Dreamy • Kawaii • Handmade & Digital Love</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">About</a>
+</nav>
+
+<section class="hero">
+    <!-- GANTI FOTO INI -->
+    <img src="images/MASKOT BY ANY 2.png" alt="Whimsical Honey">
+
+    <p>
+        Selamat datang di <b>Whimsical Honey by Any</b> 🌸  
+        toko kecil penuh cinta berisi crochet handmade, journaling digital,
+        planner estetik, dan buku manis dengan sentuhan korea vibe ✨
+    </p>
+</section>
+
+<section class="section">
+    <h2>Our Sweet Picks 🍓</h2>
+
+    <div class="products">
+        <!-- CROCHET -->
+        <div class="card">
+            <img src="images/Midnight Meow Amigurumi.jpg">
+            <h3>Crochet Amigurumi</h3>
+            <p>Handmade crochet super gemoy</p>
+            <a href="https://shopee.co.id/itsso.fanny">Checkout Shopee</a>
+            <a href="https://instagram.com/whimsical.honey">Instagram</a>
+        </div>
+
+        <!-- Daily Planner -->
+        <div class="card">
+            <img src="images/By Any 2.png">
+            <h3>Digital Journal</h3>
+            <p>PDF journal pastel aesthetic</p>
+            <a href="https://wa.me/62895603234328">WhatsApp</a>
+        </div>
+
+        <!-- FREE NOTES -->
+        <div class="card">
+            <img src="images/FREE.png" alt="Notes">
+            <h3>Weekly Planner</h3>
+            <p>Planner digital korea vibe</p>
+            <a href="https://wa.me/62895603234328">WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Connect with me 💌</p>
+    <div class="social">
+        <a href="https://wa.me/62895603234328">WhatsApp</a>
+        <a href="https://instagram.com/whimsical.honey">Instagram</a>
+    </div>
+    <p>© 2025 Whimsical Honey by Any</p>
+</footer>
+
+</body>
+</html>
